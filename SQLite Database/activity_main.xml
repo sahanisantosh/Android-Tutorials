@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editText_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:hint="Id"
+            android:inputType="number"
+            android:textColor="#ffff"
+            android:textColorHint="#000C0E" />
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_id"
+            android:hint="Name"
+            android:textColor="#ffff"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_name"
+            android:hint="Email"
+            android:textColor="#ffff"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/editText_CC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_email"
+            android:layout_marginBottom="20dp"
+            android:hint="Course Count"
+            android:inputType="number"
+            android:textColor="#ffff"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText_CC"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#3498DB"
+            android:text="Add Data"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/button_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_add"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#10A881"
+            android:text="View"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#F3B431"
+            android:text="Update"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_update"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#E44236"
+            android:text="Delete"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/button_viewAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_delete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#E74292"
+            android:text="View All"
+            android:textColor="#fff" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
